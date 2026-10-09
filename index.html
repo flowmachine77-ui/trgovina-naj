@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trgovina Naj · Zagorje ob Savi</title>
+  <meta name="description" content="Otroška trgovina Naj v Zagorju ob Savi. Od leta 1990: oblačila, didaktične igrače, pohištvo, posteljnina in knjige. Cesta Borisa Kidriča 12." />
+  <meta name="theme-color" content="#f6f1e8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="#vrh">
+        <span class="mark">N</span>
+        <span>Trgovina Naj<small>Zagorje ob Savi</small></span>
+      </a>
+      <nav class="nav" aria-label="Glavni">
+        <a href="#ponudba">Ponudba</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#znamke">Znamke</a>
+        <a href="#obisk">Obisk</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a class="call" href="tel:+38635661214">03 566 12 14</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobilni-meni">Meni</button>
+    </div>
+    <nav id="mobilni-meni" class="mobile" hidden>
+      <a href="#ponudba">Ponudba</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#znamke">Znamke</a>
+      <a href="#obisk">Obisk</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="call" href="tel:+38635661214">Pokliči 03 566 12 14</a>
+    </nav>
+  </header>
+
+  <main id="vrh">
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">Otroška trgovina · od leta 1990</p>
+        <h1 class="display">Izbrano za otroke, ki rastejo.</h1>
+        <p class="lede">Na enosmerni Kidričevi ulici v Zagorju ob Savi najdete oblačila, didaktične igrače, bukovo pohištvo, posteljnino in knjige. Kakovost, ki ostane — in svetovanje, ki ni naglica.</p>
+        <div class="actions">
+          <a class="btn btn-clay" href="#ponudba">Oglej si ponudbo</a>
+          <a class="btn btn-ghost" href="#obisk">Kako nas obiščete</a>
+        </div>
+        <dl class="stats">
+          <div><dt>Odprto</dt><dd><strong id="odprto">—</strong><span id="odprto-opis">preverjam</span></dd></div>
+          <div><dt>Starost</dt><dd><strong>0–12</strong><span>let</span></dd></div>
+          <div><dt>Pošta</dt><dd><strong>Da</strong><span>pošljemo</span></dd></div>
+        </dl>
+      </div>
+      <figure class="frame">
+        <img src="photos/hero.jpg" alt="Notranjost otroške trgovine: lesene police z oblačili, igračami in knjigami." />
+        <figcaption class="caption">Cesta Borisa Kidriča 12<span>1410 Zagorje ob Savi</span></figcaption>
+      </figure>
+    </section>
+
+    <section id="ponudba" class="band">
+      <div class="wrap section">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Ponudba</p>
+            <h2 class="display">Vse za prva leta na enem mestu.</h2>
+          </div>
+          <p class="muted">Izdelki so izbrani preudarno: kakovostni, lepo oblikovani in cenovno dosegljivi. Za natančno zalogo pokličite ali pišite.</p>
+        </div>
+        <div class="chips" role="toolbar" aria-label="Filter ponudbe">
+          <button class="chip" type="button" data-filter="vse" aria-pressed="true">Vse</button>
+          <button class="chip" type="button" data-filter="oblacila">Oblačila</button>
+          <button class="chip" type="button" data-filter="igrace">Igrače</button>
+          <button class="chip" type="button" data-filter="pohistvo">Pohištvo</button>
+          <button class="chip" type="button" data-filter="posteljnina">Posteljnina</button>
+          <button class="chip" type="button" data-filter="tekstil">Tekstil</button>
+          <button class="chip" type="button" data-filter="knjige">Knjige</button>
+        </div>
+        <div class="grid" id="kartice">
+          <article class="card" data-id="oblacila">
+            <img src="photos/oblacila.jpg" alt="Zložena otroška oblačila na hrastovi mizi." />
+            <div class="pad"><div class="row"><span>Oblačila</span><span>0–12 let</span></div><h3 class="display">Oblačila</h3><p>Kosi iz koži prijaznih materialov, po trenutnih barvah in krojih. Od prvih oblačil do šolske garderobe.</p></div>
+          </article>
+          <article class="card" data-id="igrace">
+            <img src="photos/igrace.jpg" alt="Lesene in mehke didaktične igrače." />
+            <div class="pad"><div class="row"><span>Igrače</span><span>Chicco</span></div><h3 class="display">Didaktične igrače</h3><p>Spodbujajo gibanje, motoriko in razumevanje. Brez škodljivih primesi, iz otroku prijaznih materialov.</p></div>
+          </article>
+          <article class="card" data-id="pohistvo">
+            <img src="photos/pohistvo.jpg" alt="Bukova otroška posteljica in previjalna omarica." />
+            <div class="pad"><div class="row"><span>Pohištvo</span><span>Lip Poljčane</span></div><h3 class="display">Pohištvo</h3><p>Otroške sobe, previjalne mize, zibke in postelje iz bukovega lesa, brez škodljivih premazov.</p></div>
+          </article>
+          <article class="card" data-id="posteljnina">
+            <img src="photos/posteljnina.jpg" alt="Posteljnina iz organskega bombaža." />
+            <div class="pad"><div class="row"><span>Spanje</span><span>Odeja</span></div><h3 class="display">Posteljnina</h3><p>Vrhunska posteljnina Odeja Škofja Loka, tudi iz organskega bombaža. Mehka in zračna.</p></div>
+          </article>
+          <article class="card" data-id="tekstil">
+            <img src="photos/tekstil.jpg" alt="Kopalni plašči in brisače v kremnih in nežnih barvah." />
+            <div class="pad"><div class="row"><span>Kopel</span><span>Svilanit</span></div><h3 class="display">Brisače in plašči</h3><p>Mehki kopalni plaščki in brisačke Svilanit. Toplo, nežno in pripravljeno za prvo kopel.</p></div>
+          </article>
+          <article class="card" data-id="knjige">
+            <img src="photos/knjige.jpg" alt="Otroške slikanice na lesenem pultu." />
+            <div class="pad"><div class="row"><span>Knjige</span><span>že od 0,99 €</span></div><h3 class="display">Otroške knjige</h3><p>Kartonke, slikanice in zgodbe, tudi založbe Grahovac. Pošljemo tudi po pošti.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-nas" class="wrap section about">
+      <img src="photos/pohistvo.jpg" alt="Bukova otroška posteljica v svetli sobi." />
+      <div>
+        <p class="eyebrow">O trgovini</p>
+        <h2 class="display">Od leta 1990, še vedno osebno.</h2>
+        <p class="muted">Trgovina Naj, Bojana Vodovnik s.p., je specializirana otroška trgovina. Izdelki naj bodo kakovostni, edinstveni in v otrokovo korist — tako da se dobro počutita starš in otrok.</p>
+        <p class="muted">Na enem mestu združujemo Chicco, Kanz in Losan ter slovenske znamke: pohištvo Lip Poljčane, posteljnino Odeja in tekstil Svilanit. Knjige, tudi akcijske že od 0,99 €, odpošljemo po pošti.</p>
+        <p><a class="link" href="https://www.facebook.com/trgovinaNaj">Facebook trgovine</a></p>
+      </div>
+    </section>
+
+    <section id="znamke" class="brands">
+      <div class="wrap section">
+        <h2 class="display">Znamke na policah</h2>
+        <p class="muted">Chicco, Kanz, Losan, OshKosh, Carter's, Lip Poljčane, Svilanit, Odeja Škofja Loka in založba Grahovac.</p>
+        <ul class="brand-grid">
+          <li><p class="display">Chicco</p><span>Italija</span></li>
+          <li><p class="display">Kanz</p><span>Nemčija</span></li>
+          <li><p class="display">Losan</p><span>Španija</span></li>
+          <li><p class="display">OshKosh</p><span>ZDA</span></li>
+          <li><p class="display">Carter's</p><span>ZDA</span></li>
+          <li><p class="display">Lip Poljčane</p><span>Slovenija</span></li>
+          <li><p class="display">Svilanit</p><span>Slovenija</span></li>
+          <li><p class="display">Odeja</p><span>Škofja Loka</span></li>
+          <li><p class="display">Grahovac</p><span>knjige</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap section cta-inner">
+        <div>
+          <h2 class="display">Naročilo tudi po pošti.</h2>
+          <p>Za knjige, oblačila in manjše kose pišite na Facebook, pokličite ali pošljite e-pošto. Svetujemo glede velikosti in zaloge.</p>
+        </div>
+        <a class="btn" href="#kontakt" style="background:#fffaf3;color:#241c16">Napišite nam</a>
+      </div>
+    </section>
+
+    <section id="obisk" class="wrap section visit">
+      <div>
+        <p class="eyebrow">Obisk</p>
+        <h2 class="display">Kidričeva, hišna številka 12.</h2>
+        <ul class="facts">
+          <li>Cesta Borisa Kidriča 12, 1410 Zagorje ob Savi</li>
+          <li><a href="tel:+38635661214">03 566 12 14</a></li>
+          <li><a href="mailto:trgovina.naj@t-2.net">trgovina.naj@t-2.net</a></li>
+          <li id="stanje">Urnik je spodaj.</li>
+        </ul>
+        <p><a class="btn btn-ghost" href="https://www.openstreetmap.org/search?query=Cesta%20Borisa%20Kidri%C4%8Da%2012%2C%20Zagorje%20ob%20Savi">Odpri zemljevid</a></p>
+      </div>
+      <div>
+        <ul class="hours" id="urnik">
+          <li data-day="1"><span>Ponedeljek</span><span>8.00–12.00 · 15.00–19.00</span></li>
+          <li data-day="2"><span>Torek</span><span>8.00–12.00 · 15.00–19.00</span></li>
+          <li data-day="3"><span>Sreda</span><span>8.00–12.00 · 15.00–19.00</span></li>
+          <li data-day="4"><span>Četrtek</span><span>8.00–12.00 · 15.00–19.00</span></li>
+          <li data-day="5"><span>Petek</span><span>8.00–12.00 · 15.00–19.00</span></li>
+          <li data-day="6"><span>Sobota</span><span>8.00–12.00</span></li>
+          <li data-day="0"><span>Nedelja</span><span>Zaprto</span></li>
+        </ul>
+        <p class="note">Urnik po javno objavljenem delovnem času. Ob praznikih se lahko spremeni.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="band">
+      <div class="wrap section contact">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="display">Vprašajte za zalogo ali velikost.</h2>
+          <p class="muted">Obrazec odpre vaš e-poštni program in pripravi sporočilo na trgovina.naj@t-2.net. Ni spletne trgovine s košarico — odgovorimo osebno.</p>
+        </div>
+        <form id="obrazec">
+          <label>Ime<input required name="ime" autocomplete="name" /></label>
+          <label>Telefon<input name="telefon" type="tel" autocomplete="tel" /></label>
+          <label>Kaj iščete<textarea required name="sporocilo" rows="4"></textarea></label>
+          <button class="btn btn-ink" type="submit">Pripravi e-pošto</button>
+        </form>
+        <div class="panel" id="hvala" hidden>
+          <h3 class="display">Sporočilo je pripravljeno.</h3>
+          <p class="muted">Če se e-pošta ni odprla, pokličite 03 566 12 14 ali pišite na trgovina.naj@t-2.net.</p>
+          <button class="btn btn-ghost" type="button" id="znova">Novo sporočilo</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <p class="display" style="font-size:1.6rem;margin:0">Trgovina Naj</p>
+        <p class="muted">Bojana Vodovnik s.p. · Cesta Borisa Kidriča 12, 1410 Zagorje ob Savi<br />03 566 12 14 · trgovina.naj@t-2.net</p>
+      </div>
+      <nav>
+        <a href="https://www.facebook.com/trgovinaNaj">Facebook</a>
+        <a href="tel:+38635661214">Pokliči</a>
+        <a href="#vrh">Na vrh</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
